@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 1.3em;
+    font-weight: 450;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-color: lightgreen;
+    font-size: 1.4em;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.container-fluid .img:hover {
+    height: 65px;
+    width: 75px;
+}

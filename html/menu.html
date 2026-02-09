@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieZone</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .menu-title {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .price {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        /* Footer Styles */
+        
+        footer {
+            background: #0b0b0b;
+        }
+        
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-links a,
+        .footer-bottom-link {
+            color: #cfcfcf;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-links a:hover,
+        .footer-bottom-link:hover {
+            color: #ffffff;
+        }
+        
+        .social-icon {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        
+        .social-icon:hover {
+            color: #adb5bd;
+        }
+        
+        footer input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #6c757d;
+            color: #fff;
+        }
+        
+        footer input::placeholder {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-md bg-body-secondary shadow">
+                <div class="container-fluid ">
+                    <img class="img" src="/img/logo.png" width="70px" height="60px" alt="image">
+                    <h2 class="text-danger-emphasis ms-2 fw-bold fs-1 ">Foodie Zone</h2>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="offers.html">Offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="table_booking.html">Table Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback.html">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a class="nav-link" href="contact.html">Contact</a> -->
+                            </li>
+                        </ul>
+
+                        <!-- <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Menu -->
+    <h2 class="text-center menu-title mt-4 fw-bold fs-2 text-success">---Our Delicious Menu---</h2>
+
+    <!-- Starters -->
+    <h4 class="mb-3 text-center fw-semibold fs-3">Starters</h4>
+    <div class="row g-4 mb-5">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/panner_tikka.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Paneer Tikka</h5>
+                    <p class="card-text">Grilled cottage cheese with spices.</p>
+                    <p class="price">₹250</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/french_fries.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">French Fries</h5>
+                    <p class="card-text">Crispy golden potato fries.</p>
+                    <p class="price">₹150</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/Spring_roll.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Spring Roll</h5>
+                    <p class="card-text">Crunchy rolls filled with veggies.</p>
+                    <p class="price">₹180</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Course -->
+    <h4 class="mb-3 text-center fw-semibold fs-3">Main Course</h4>
+    <div class="row g-4 mb-5">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/Butter_chicken.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Butter Chicken</h5>
+                    <p class="card-text">Creamy tomato-based chicken curry.</p>
+                    <p class="price">₹350</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/Veg_biryani.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Veg Biryani</h5>
+                    <p class="card-text">Aromatic rice with spices.</p>
+                    <p class="price">₹300</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/panner_butter_masala.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Paneer Butter Masala</h5>
+                    <p class="card-text">Paneer cooked in buttery gravy.</p>
+                    <p class="price">₹320</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desserts -->
+    <h4 class="mb-3 text-center fw-semibold fs-3">Desserts</h4>
+    <div class="row g-4">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/chocolate_cake.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate Cake</h5>
+                    <p class="card-text">Rich and moist chocolate delight.</p>
+                    <p class="price">₹200</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/ice_cream.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream</h5>
+                    <p class="card-text">Vanilla, chocolate & strawberry.</p>
+                    <p class="price">₹120</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100">
+                <img src="/img/gulab_jamun.jpg" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Gulab Jamun</h5>
+                    <p class="card-text">Soft milk dumplings in sugar syrup.</p>
+                    <p class="price">₹140</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- NEW FOOTER -->
+    <footer class="pt-5 bg-dark text-light mt-3">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h2 class="fw-bold fs-9">FoodieZone</h2>
+                    <p class="small text-">Subscribe for latest updates</p>
+                    <div class="d-flex mb-3">
+                        <input type="email" class="form-control rounded-2" placeholder="Enter your email address">
+                        <button class="btn btn-secondary rounded-2 ms-2 px-4">Subscribe</button>
+                    </div>
+                    <p class="small text-success mb-1">For bookings contact</p>
+                    <p>+918605634161</p>
+                    <p class="small text-success mb-1">Customer support</p>
+                    <p>support@foodiezone.com</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="text-uppercase text-success mb-3 ms-4">Quick Links</h6>
+                    <div class="row ms-3">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a class="text-reset text-decoration-none" href="index.html">Home</a></li>
+                                <li><a class="text-reset text-decoration-none" href="menu.html">Menu</a></li>
+                                <li><a class="text-reset text-decoration-none" href="offers.html">Offers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a class="text-reset text-decoration-none" href="about.html">About</a></li>
+                                <li><a class="text-reset text-decoration-none" href="table_booking.html">Table Booking</a></li>
+                                <li><a class="text-reset text-decoration-none" href="feedback.html">Feedback</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ps-5">
+                    <h6 class="text-uppercase text-success mb-3">Connect with us</h6>
+                    <div class="d-flex gap-4">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter-x fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="row small text-white pb-3">
+                <div class="col-md-12 text-center text-md-center">
+                    © 2026 FoodieZone. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
